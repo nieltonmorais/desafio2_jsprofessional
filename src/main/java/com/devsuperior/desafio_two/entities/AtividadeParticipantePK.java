@@ -5,30 +5,17 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
-public class BlocoAtividadePK {
-
-    @ManyToOne
-    @JoinColumn(name = "bloco_id")
-    private Bloco bloco;
+public class AtividadeParticipantePK {
 
     @ManyToOne
     @JoinColumn(name = "atividade_id")
     private Atividade atividade;
 
-    public BlocoAtividadePK(){
-    }
+    @ManyToOne
+    @JoinColumn(name = "participante_id")
+    private Participante participante;
 
-    public BlocoAtividadePK(Bloco bloco, Atividade atividade) {
-        this.bloco = bloco;
-        this.atividade = atividade;
-    }
-
-    public Bloco getBloco() {
-        return bloco;
-    }
-
-    public void setBloco(Bloco bloco) {
-        this.bloco = bloco;
+    public AtividadeParticipantePK() {
     }
 
     public Atividade getAtividade() {
@@ -37,5 +24,13 @@ public class BlocoAtividadePK {
 
     public void setAtividade(Atividade atividade) {
         this.atividade = atividade;
+    }
+
+    public Participante getParticipante() {
+        return participante;
+    }
+
+    public void setParticipante(Participante participante) {
+        this.participante = participante;
     }
 }

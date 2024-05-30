@@ -10,4 +10,20 @@ public class BlocoAtividade {
 
     @EmbeddedId
     private BlocoAtividadePK id =  new BlocoAtividadePK();
+
+    public BlocoAtividade(){
+    }
+
+    public BlocoAtividade(Bloco bloco, Atividade atividade) {
+        id.setBloco(bloco);
+        id.setAtividade(atividade);
+    }
+
+    public BlocoAtividadePK getId() {
+        return id;
+    }
+
+    public void setId(BlocoAtividadePK id) {
+        this.id = id;
+    }
 }
