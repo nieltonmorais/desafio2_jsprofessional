@@ -7,7 +7,7 @@ INSERT INTO tb_participante(nome, email) VALUES ('Maria do Rosário', 'maria@gma
 INSERT INTO tb_participante(nome, email) VALUES ('Tereza Silva', 'teresa@gmail.com');
 
 INSERT INTO tb_atividade (nome, descricao, preco, categoria_id) VALUES ('Curso de HTML', 'Aprenda HTML de forma prática', 80.00, 1);
-INSERT INTO tb_atividade (nome, descricao, preco, categoria_id) VALUES ('Oficina de GitHub', 'Controle versões de seus projetos', 50.00, 1);
+INSERT INTO tb_atividade (nome, descricao, preco, categoria_id) VALUES ('Oficina de GitHub', 'Controle versões de seus projetos', 50.00, 2);
 
 INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (1, 1);
 INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (2, 1);
